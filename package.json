@@ -1,0 +1,27 @@
+{
+  "author": "Matt McKellar-Spence",
+  "description": "CoffeeScript talk at Web Developer 42 on 2015-09-30.",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "jade": "^1.11.0",
+    "jstransformer-coffee-script": "^1.0.0",
+    "jstransformer-stylus": "^1.0.0",
+    "stylus": "^0.52.4"
+  },
+  "keywords": [
+    "talk"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "wd42_coffeescript_talk",
+  "repository": {
+     "type": "git",
+     "url": "https://github.com/MattMS/WD42_CoffeeScript_talk.git"
+  },
+  "scripts": {
+    "build": "jade index.jade",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "jade --watch index.jade"
+  },
+  "version": "1.0.0"
+}

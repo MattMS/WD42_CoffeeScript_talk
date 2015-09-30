@@ -1,0 +1,16 @@
+extends ./_base
+
+block content
+	.reveal
+		.slides
+			section(
+				data-markdown="README.md"
+				data-separator="^\n\n\n"
+				data-separator-vertical="^\n\n"
+			)
+
+block styles
+	style(type="text/css")
+		:stylus
+			h1, h2, h3, h4, h5, h6
+				text-transform initial !important
