@@ -7,16 +7,16 @@ html(lang="en")
 		meta(content="CoffeeScript talk for WD42" name="description")
 		title WD42 CoffeeScript talk
 
-		link(href="/components/reveal.js/3/1/0/css/reveal.css" rel="stylesheet")
-		link(href="/components/reveal.js/3/1/0/css/theme/black.css" rel="stylesheet")
-		link(href="/components/reveal.js/3/1/0/lib/css/zenburn.css" rel="stylesheet")
+		link(href="./components/reveal.js/3/1/0/css/reveal.css" rel="stylesheet")
+		link(href="./components/reveal.js/3/1/0/css/theme/black.css" rel="stylesheet")
+		link(href="./components/reveal.js/3/1/0/lib/css/zenburn.css" rel="stylesheet")
 		block styles
 
 	body
 		block content
 
-		script(src="/components/reveal.js/3/1/0/lib/js/head.min.js" type="text/javascript")
-		script(src="/components/reveal.js/3/1/0/js/reveal.js" type="text/javascript")
+		script(src="./components/reveal.js/3/1/0/lib/js/head.min.js" type="text/javascript")
+		script(src="./components/reveal.js/3/1/0/js/reveal.js" type="text/javascript")
 		script(type="text/javascript")
 			:coffee-script
 				Reveal.initialize
@@ -26,22 +26,22 @@ html(lang="en")
 					dependencies: [
 						condition: ->
 							!document.body.classList
-						src: '/components/reveal.js/3/1/0/lib/js/classList.js'
+						src: './components/reveal.js/3/1/0/lib/js/classList.js'
 					,
 						condition: ->
 							!!document.querySelector '[data-markdown]'
-						src: '/components/reveal.js/3/1/0/plugin/markdown/marked.js'
+						src: './components/reveal.js/3/1/0/plugin/markdown/marked.js'
 					,
 						condition: ->
 							!!document.querySelector '[data-markdown]'
-						src: '/components/reveal.js/3/1/0/plugin/markdown/markdown.js'
+						src: './components/reveal.js/3/1/0/plugin/markdown/markdown.js'
 					,
 						async: true
 						callback: ->
 							hljs.initHighlightingOnLoad()
 						#condition: ->
 							#!!document.querySelector 'pre code'
-						src: '/components/reveal.js/3/1/0/plugin/highlight/highlight.js'
+						src: './components/reveal.js/3/1/0/plugin/highlight/highlight.js'
 					]
 					history: true
 					keyboard: true
